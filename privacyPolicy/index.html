@@ -1,0 +1,470 @@
+<!-- Website Design By CJohn aka Beta Programmer -->
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+  <title>Xccurate Security : LIFE IS JUST A HACK!</title>
+
+
+  <meta name="description"
+    content="Xccurate Security is among Top Web Security Companies in the World of Cybersecurity. We make the Internet work the way it should and protect your Organization from real-world risks.">
+  <meta name="keywords"
+    content="website security companies, best website security companies, website cyber security, security companies websites, web security companies, Cyber Insurance,Cyber Liability,Cyber Measurement,Cyber Risk Assessment,Cyber Risk Management,Cyber Risk Measurement,Cyber Risk Mitigation,Cyber Risk Posture,Cyber Risk Quantification,Cyber Security Board Presentation,Cyber Security For CISO, Cyberattacks,Data Breach,Data Security,Dollar Value Risk,Exposure Monitoring,Financial Impact Of Cyberattack, How To Measure My Cyber Risk,How To Measure My Cybersecurity,How To Measure My Cybersecurity Risk Posture,Impact Of A Data Breach,Inside-Out Risk Assessment,Insider Threats,Integrated Risk Management,IT Risk Management,IT Security,Leaked Credentials, Mathematics Of Cyber Risk, Mathematics Of Cyber Security,Measure What Matters In Cybersecurity, Mitigate Cyber Risk, Proactive Risk Analysis,Real Time Risk Monitoring, Risk Assessment, Risk Management,Risk Quantification,Risk Scoring, Score Cyber Security,Security & Risk Management Leaders,Vulnerability Assessment">
+
+  <link rel="shortcut icon" href="../assets/images/logo.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet">
+  <link href="../assets/css/jquery.fancybox.css" rel="stylesheet">
+  <link href="../assets/css/slick.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+</head>
+
+<body>
+  <div
+    style="background:url(../assets/images/with_trn.png) repeat left top; position:fixed; width:100%; height:100%; left:0px; top:0px; z-index:999999;display:none;"
+    id="full_page_loader">
+    <div
+      style="position:absolute; left:0px; top:0px; width:100%; height:100%; background:url(../assets/images/load.gif) no-repeat center center;">
+    </div>
+  </div>
+  <div id="toTop" style="display: block;">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </div>
+  <div class="innner_header">
+    <div class="mainHeader">
+      <header>
+        <div class="menubox">
+          <div class="navBlock">
+            <div class="navbarBtn  d-block">
+              <a class="menubtnbox" id="sidebarCollapse">
+                <button type="button" class="btn crossLine">
+                  <span class="line crossLine1"></span>
+                  <span class="line crossLine2"></span>
+                  <span class="line crossLine3"></span>
+                  <span class="line crossLine4"></span>
+                  <span class="line crossLine5"></span>
+                  <span class="line crossLine6"></span>
+                  <span class="line crossLine7"></span>
+                  <span class="line crossLine8"></span>
+                </button>
+              </a>
+            </div>
+            <div class="fullMenu">
+              <nav class="navbarLink navbar-expand-md" id="sidebar">
+                <div class="navi_mobile">
+                  <a href="#" id="dismiss" class="hideclose d-block">
+                    <img src="../assets/images/close_icon.svg" class="img-fluid" alt="img">
+                  </a>
+                  <div class="mobileboxreverse">
+                    <div class="btnMenuInquiry">
+                    </div>
+                    <div class="navbar-collapse">
+                      <ul class="navbar-nav mr-auto">
+                        <li>
+                          <a href="../index.html"><span><img src="../assets/images/headericon/1.svg" class="img-fluid"
+                                alt="img"></span> Home </a>
+                        </li>
+                        <li>
+                          <a href="../aboutUs/"><span><img src="../assets/images/logo_black.png" class="img-fluid"
+                                alt="img"></span>About Us</a>
+                        </li>
+                        <li><a href="../services/"><span><img src="../assets/images/headericon/3.svg" class="img-fluid"
+                                alt="img"></span>Services</a></li>
+                        <li><a href="http://report.xccuratesecurity.in/"><span><img
+                                src="../assets/images/headericon/8.svg" class="img-fluid" alt="img"></span>Report</a>
+                        </li>
+                        <li><a href="../training/"><span><img src="../assets/images/headericon/6.svg" class="img-fluid"
+                                alt="img"></span>Training</a></li>
+                        <li><a href="../contactUs/"><span><img src="../assets/images/headericon/5.svg" class="img-fluid"
+                                alt="img"></span>Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div id="logo" class="menulogo">
+          <a href="../index.html"><img src="../assets/images/logo.png"></a>
+        </div>
+        <div class="menubtn">
+          <a href="../Contactus/" class="yellowbtn">Contact Us</a>
+        </div>
+      </header>
+    </div>
+    <script>
+      $().ready(function () {
+        $("#investorform").validate();
+      });
+      function sendinvestor() {
+        if ($("#investorform").valid()) {
+          //var form = $('#investorform').serialize();
+          var form = new FormData($("#investorform")[0]);
+          // alert(form);
+
+          $('#btnsubmit').prop('disabled', true);
+          $.ajax(
+            {
+              type: "POST",
+              url: "https://www.Xccurate Security.in/Dashboard/sendinvestormail",
+              data: form,
+              async: false,
+              cache: false,
+              contentType: false,
+              processData: false,
+              success: function (data) {
+                if (data == 1) {
+
+                  $('#successmsg').show();
+                  $('#successmsg').delay(5000).fadeOut();
+                }
+                else if (data == 2) {
+                  $('#captchaerrormsg').show();
+                  $('#captchaerrormsg').delay(3000).fadeOut();
+
+                }
+                else {
+                  $('#errormsg').show();
+                  $('#errormsg').delay(3000).fadeOut();
+                  // setInterval('location.reload()', 4000);
+                }
+                // $('#btnsubmit').prop('disabled',false);
+                $("#captchaerror").hide();
+                $('#investorform')[0].reset();
+              }
+            });
+        }
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173177654-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-173177654-1');
+    </script>
+
+    <!-- Start Alexa Certify Javascript -->
+    <script type="text/javascript">
+      _atrk_opts = { atrk_acct: "QjwEu1FYxz20cv", domain: "Xccurate Security.in", dynamic: true };
+      (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+    </script>
+    <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=QjwEu1FYxz20cv" style="display:none"
+        height="1" width="1" alt></noscript>
+    <!-- End Alexa Certify Javascript -->
+  </div>
+
+
+
+
+
+
+  <div class="innerbannearea commanbanner">
+    <div class="innerbanner"></div>
+    <div class="innertitle">
+      <h1>Privacy Policy </h1>
+    </div>
+  </div>
+  <div class="innerterms_conditionsarea terms">
+    <div class="container">
+      <ul class="terms_conditionsarea">
+        <li class="terms_conditionsbox">
+          <h2>Introduction</h2>
+          <p class="regularfont">This privacy policy explains Xccurate Security practices regarding how
+            information we collect from you is used and shared with third parties. By visiting the Xccurate Security’s
+            web sites,
+            using our products and services, you accept the practices described in this privacy policy. This privacy
+            policy applies to anonymous data and personal information collected at our web sites, and to personal
+            information collected in connection with the sale, support and use of our products and services. This
+            privacy policy also applies where you are a customer or user of any of our hosted service offerings.</p>
+        </li>
+        <li class="terms_conditionsbox">
+          <h2>Collection of personal data online</h2>
+          <p class="regularfont">This privacy policy explains Xccurate Security practices regarding how
+            information we collect from you is used and shared with third parties. By visiting the Xccurate Security’s
+            web sites,
+            using our products and services, you accept the practices described in this privacy policy. This privacy
+            policy applies to anonymous data and personal information collected at our web sites, and to personal
+            information collected in connection with the sale, support and use of our products and services. This
+            privacy policy also applies where you are a customer or user of any of our hosted service offerings.</p>
+          <p>The information collected by our website may include:</p>
+          <ul class="dots bullets">
+            <li>
+              <p>Any personal details you enter and submit through a form on the site; such as name, address, email
+                address, etc.</p>
+            </li>
+            <li>
+              <p>Your IP address, referrer, web pages that you visit and any other data normally stored in website
+                logs.Session information stored in cookies that are used to ensure accurate data is extracted from our
+                systems. These cookies do not include any personal data.</p>
+            </li>
+            <li>
+              <p>Under no circumstances will we hold sensitive payment details such as your credit card number, expiry
+                date and security code.</p>
+            </li>
+            <li>
+              <p><b>Third-Party Cookies –</b> the use of cookies by our [partners, affiliates, tracking utility company,
+                service providers] is not covered by our privacy statement. We do not have access or control over these
+                cookies. Our partners, affiliates, and service providers may use session ID cookies [to make it easier
+                for you to navigate our site, etc.]</p>
+            </li>
+            <li>
+              <p><b>Co-branding –</b> Some pages may have the look and feel of being on <a
+                  href="http://Xccurate Security.in/" target="_blank" style="color: #F8FF35">www.Xccurate
+                  Security.in</a> however the information collected on these
+                pages may not be covered under our privacy statement. All information collected on www.abc.com is owned
+                and controlled by that company's</p>
+            </li>
+          </ul>
+        </li>
+        <li class="terms_conditionsbox">
+          <h2>Your Online Activities</h2>
+          <p class="regularfont">If you visit our web-sites we keep track of IP host addresses solely for security
+            purposes. All IP host addresses for which no security issues are identified are disposed of in a timely
+            manner. We also keep track of daily page views to monitor traffic volume so that we can plan for future
+            growth.</p>
+        </li>
+        <li class="terms_conditionsbox">
+          <h2>Disclosure to third parties</h2>
+          <p class="regularfont">Xccurate Security. will not provide any personal details to any third parties
+            with individual or aggregate information about visitors to our site. Our organisation does not sell, rent or
+            market personal data about individuals to third parties.</p>
+        </li>
+        <li class="terms_conditionsbox">
+          <h2>Removal of personal information</h2>
+          <p class="regularfont">In the event that you wish your personal information to be removed from our web- based
+            databases then please write to us at <a href="mailto:info@Xccurate Security.in"
+              style="color: #F8FF35">info@Xccurate Security.in</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="footerbtmBg">
+      <div class="footer_area padd_top0">
+        <div class="footer_center">
+          <div class="footerlogo">
+            <a href> <img src="../assets/images/logo.png" alt="img" class="img-fluid"></a>
+          </div>
+          <div class="footermenu">
+            <ul>
+              <li><a href="../aboutUs/">About Us</a></li>
+                            <li><a href="../contactUs/">Services</a></li>
+                            <li><a href="../training/">Training</a></li>
+                            <li><a href="../contactUs/">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="socialmedia">
+            <ul>
+              <li><a href="https://www.facebook.com/Xccurate-Security-107256291115335/" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/XccuratSecurity?s=01" target="_blank"><i class="fa fa-twitter"
+                    aria-hidden="true"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/xccurate-security" target="_blank"><i class="fa fa-linkedin"
+                    aria-hidden="true"></i></a></li>
+              <li><a href="https://instagram.com/xccuratesecurity?igshid=c65amesgoe4z" target="_blank"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.youtube.com/c/CharlieTheHacker" target="_blank"><i class="fa fa-youtube-play"
+                    aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerbtmBg">
+          <div class="padd_top0">
+            <div class="footer_bottom">
+              <div class="copyright">
+                <p>Copyright © 2020 Xccurate Security. All Rights Reserved.</p>
+              </div>
+              <div class="copyrightpolicy">
+                <div>
+                                            <a href="../termsAndCondition/">Terms of Services</a>
+                                        </div>
+                                        <div>
+                                            <a href="../privacyPolicy/">Privacy Policy</a>
+                                        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/jquery-1.12.0.min.js"></script>
+  <script src="../assets/js/jquery.validate.js"></script>
+
+
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="../assets/js/slick.js"></script>
+  <!--<script src="https://www.Xccurate Security.in/assets/js/rellax.js"></script>-->
+  <script src="../assets/js/jquery.fancybox.js"></script>
+  <script src="../assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.success').delay(6000).fadeOut();
+      $('.failure').delay(6000).fadeOut();
+    });
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
+
+      $('#toTop').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+      });
+    });
+
+  </script>
+  <script>
+    $(".regular").show();
+    $(".regular").slick({
+      dots: false,
+      arrows: false,
+      pauseOnHover: false,
+      infinite: true,
+      slidesToShow: 1,
+      cssEase: 'linear',
+      autoplay: true,
+      autoplaySpeed: 5500,
+      slidesToScroll: 1
+    });
+
+    $(".apply").click(function () {
+      $('html, body').animate({
+        scrollTop: $("#applynow").offset().top + 100
+      }, 2000);
+    });
+
+  </script>
+  <script>
+    $(function () {
+      var words = $(".banner_title h1").text().split("");
+      $(".banner_title h1").empty();
+      $.each(words, function (i, v) {
+        $(".banner_title h1").append($("<span>").text(v));
+      });
+
+    });
+
+    $('.btnmainmainu').click(function () {
+      $('.inquirybox').toggleClass('openinquiry');
+    })
+    $('.arrowLink').click(function () {
+      $('.inquirybox').toggleClass('openinquiry');
+    })
+
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('.js-example-basic-single').select2();
+    });
+
+  </script>
+
+  <script type="text/javascript">
+
+    jQuery.validator.addMethod("lettersonly", function (value, element) {
+      return this.optional(element) || /^[a-z ]+$/i.test(value);
+    }, "Letters only please");
+    $().ready(function () {
+      $("#inquiry_form1").validate({
+        rules: {
+          txtname: {
+            lettersonly: true
+          },
+          txtlname_V: {
+            lettersonly: true
+          }
+
+        }
+      });
+      $("#type_form").validate({
+        rules: {
+          txtname: {
+            lettersonly: true
+          },
+          txtlname_V: {
+            lettersonly: true
+          }
+
+        }
+      });
+
+    });
+
+    function sendInquiryform() {
+      if ($("#inquiry_form1").valid()) {
+
+        var form = new FormData($("#inquiry_form1")[0]);
+        $('#btnsubmit').prop('disabled', true);
+        $.ajax({
+          type: "POST",
+          url: "https://www.Xccurate Security.in/platform/sendplatformInquiryMail",
+          data: form,
+          async: false,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function (data) {
+            if (data == 1) {
+              $('#successmessage').show();
+              $('html, body').animate({ scrollTop: 0 }, 0);
+              $('#successmessage').delay(3000).fadeOut();
+              setInterval('location.reload()', 4000);
+
+            } else {
+              $('#errormsg').show();
+              $('#errormsg').delay(3000).fadeOut();
+              $('html, body').animate({ scrollTop: 0 }, 0);
+              setInterval('location.reload()', 4000);
+
+            }
+            $('#btnsubmit').prop('disabled', false);
+
+            $('#inquiry_form1')[0].reset();
+          }
+        });
+      }
+    }
+  </script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5fc67a6d920fc91564cc771f/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>
+<!-- Website Design By CJohn aka Beta Programmer -->
